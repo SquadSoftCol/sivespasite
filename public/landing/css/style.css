@@ -1,6 +1,6 @@
 :root {
     --dark_blue: #183059;
-    --light_blue: #61B8CF;
+    --light_blue: #006bff;
     --dark_green: #3C773C;
     --light_green: #BADA4D;
     --grey: #5E636E;
@@ -273,13 +273,17 @@ a:hover {
 
 
 /* estilos navbar */
+.navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
 
 .bg-light {
-    background-color: var(--dark_blue)!important;
+    background-color: var(--light_blue)!important;
 }
 
 .navbar-brand svg {
-    width: 10rem!important;
+    width: 7rem!important;
 }
 
 .navbar ul li a {
@@ -293,19 +297,17 @@ a:hover {
 }
 
 .navbar ul li a:hover {
-    border-bottom: 5px solid var(--light_green);
-    padding-right: 2em!important;
-    padding-left: 2em!important;
+    border-bottom: 2px solid var(--light_green);
     color: var(--light_green) !important;
-    font-weight: 800;
+    font-weight: 500;
+    border-radius: 0px;
 }
 
 .navbar ul li a:focus {
-    border-bottom: 5px solid var(--light_green);
-    padding-right: 2em!important;
-    padding-left: 2em!important;
+    border-bottom: 2px solid var(--light_green);
     color: var(--light_green) !important;
-    font-weight: 800;
+    font-weight: 500;
+    border-radius: 0px;
 }
 
 
@@ -474,7 +476,13 @@ a:hover {
 }
 
 .descargas h3 {
-    color: var(--dark_green);
+    font-weight: 600;
+    color: var(--light_blue);
+    border-left: 4px solid #000;
+    padding-left: 5px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 
@@ -700,7 +708,7 @@ table select {
 }
 
 .card-link {
-    color: var(--dark_blue);
+    color: var(--light_blue);
 }
 
 .card-title {
